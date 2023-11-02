@@ -1,0 +1,39 @@
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right ,white ,rgb(135, 135, 245));
+  }
+  
+  .lContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .lInput{
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .lButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #003580;
+
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .lButton:hover{
+translate: 2px 2px;
+  }
+  .lButton:active{
+    content: 'Please Wait';
+  }
+  .lButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+  }

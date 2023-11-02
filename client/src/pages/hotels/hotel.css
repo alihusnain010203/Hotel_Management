@@ -1,0 +1,126 @@
+.HotelContainer{
+    padding: 20px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.hotelWrapper{
+    width: 100%;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hotelTitle{
+    font-size: 24px;
+}
+.hotelDetailsPrice{
+   background-color: lightblue;
+   padding: 10px;
+   width: fit-content;
+   border-radius: 10px;
+    font-size: 10px;
+    color: #0071c2;
+}
+.hotelDetailsPrice>span{
+    color: #008009;
+}
+.hotelDesc{
+    font-size: 15px;
+}
+
+
+.hotelAddress{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hotelDistance{
+    color: #0071c2;
+    font-weight: 500;
+}
+.HotelPriceHighLight{
+    color: #008009;
+    
+    font-weight: bold;
+}
+.hotelimgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hotelImgWrapper{
+width: 33%;
+
+}
+.hotelImg{
+    width: 100%;
+    object-fit: cover;
+}
+.BookNow{
+    background-color: #0071c2;
+    color: white;
+    position: absolute;
+    right: 10vw;
+    padding: 5px;
+width: fit-content;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.BookNow:hover{
+    translate: 2px 2px;
+}
+.imgSlider{
+   width: 100%;
+}
+.slider{
+    position: sticky;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.123);
+    z-index: 2;
+}
+.slider>p{
+    padding: 5px;
+}
+.sliderWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close{
+position: absolute;
+left: 95%;
+top: -7%;
+}
+@media screen and (max-width:650px) {
+    .HotelPriceHighLight{
+        font-size: 12px;
+    }
+    .hotelDistance{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .HotelPriceHighLight{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:900px) {
+    .slider{
+    
+      width: 80vw;
+      margin-bottom: 15px;
+    }
+}
